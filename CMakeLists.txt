@@ -81,7 +81,7 @@ add_library(${PROJECT_NAME} SHARED ${SOURCES} version.h)
 # Add Fledge library names
 target_link_libraries(${PROJECT_NAME} ${NEEDED_FLEDGE_LIBS})
 # Add additional libraries
-target_link_libraries(${PROJECT_NAME} -lssl -lcrypto -lpaho-mqtt3cs)
+target_link_libraries(${PROJECT_NAME} -lssl -lcrypto -lpaho-mqtt3c)
 
 # Set the build version 
 set_target_properties(${PROJECT_NAME} PROPERTIES SOVERSION 1)
