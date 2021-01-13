@@ -3,13 +3,12 @@
 plugin_name=mqtt
 plugin_type=notify
 plugin_install_dirname=mqtt
-additional_libs="usr/local/fledge/lib/plugins:/usr/local/lib/libpaho*"
 
 # Now build up the runtime requirements list. This has 3 components
 #   1. Generic packages we depend on in all architectures and package managers
 #   2. Architecture specific packages we depend on
 #   3. Package manager specific packages we depend on
-requirements="fledge,fledge-service-notification"
+requirements="fledge,fledge-service-notification,fledge-mqtt"
 
 case "$arch" in
 	x86_64)
